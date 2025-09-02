@@ -1,5 +1,12 @@
 cover_id,member_name,top_1_choice,top_2_choice,top_3_choice,assigned_role,total_covers,total_got_1,total_got_2,total_got_3,total_got_none
 
+#maniac - missing
+#guerrilla - missing
+#dice - missing
+#case185 - missing
+#cheers - missing
+#antifragile - missing
+
 #halazia
 1,jorryn,yunho,san,seonghwa,yunho,0,0,0,0,0
 1,kelvin,jongho,wooyoung,san,jongho,0,0,0,0,0
@@ -10,171 +17,330 @@ cover_id,member_name,top_1_choice,top_2_choice,top_3_choice,assigned_role,total_
 1,eldora,san,yeosang,seonghwa,yeosang,0,0,0,0,0
 1,thy,san,seonghwa,hongjoong,san,0,0,0,0,0
 
+#sweetjuice
+2,thy,goeun,dosie,yuki,chaein,1,1,0,0,0
+2,sean,dosie,yuki,goeun,dosie,1,1,0,0,0
+2,diana,swan,goeun,chaein,swan,1,1,0,0,0
+2,eldora,goeun,chaein,dosie,goeun,1,0,1,0,0
+2,ivy,,,,irae,0,0,0,0,0
+2,jess,,,,yuki,1,1,0,0,0
+
+#samescent - missing
+
 #setmefree
-2,kelly,jihyo,nayeon,sana,jeongyeon,0,0,0,0,0
-2,jaimee,sana,jihyo,nayeon,sana,0,0,0,0,0
-2,sydney,dahyun,tzuyu,chaeyoung,tzuyu,1,0,1,0,0
-2,eldora,sana,nayeon,momo,mina,1,0,1,0,0
-2,miranda,momo,jihyo,jeongyeon,momo,0,0,0,0,0
-2,eilene,nayeon,mina,tzuyu,nayeon,0,0,0,0,0
-2,sean,jihyo,nayeon,jeongyeon,jihyo,1,1,0,0,0
-2,vivian,jihyo,dahyun,mina,dahyun,0,0,0,0,0
-2,zoe,tzuyu,mina,chaeyoung,chaeyoung,0,0,0,0,0
+3,kelly,jihyo,nayeon,sana,jeongyeon,0,0,0,0,0
+3,jaimee,sana,jihyo,nayeon,sana,0,0,0,0,0
+3,sydney,dahyun,tzuyu,chaeyoung,tzuyu,1,0,1,0,0
+3,eldora,sana,nayeon,momo,mina,2,1,1,0,0
+3,miranda,momo,jihyo,jeongyeon,momo,0,0,0,0,0
+3,eilene,nayeon,mina,tzuyu,nayeon,0,0,0,0,0
+3,sean,jihyo,nayeon,jeongyeon,jihyo,2,2,0,0,0
+3,vivian,jihyo,dahyun,mina,dahyun,0,0,0,0,0
+3,zoe,tzuyu,mina,chaeyoung,chaeyoung,0,0,0,0,0
+
+#openingsequence - missing
 
 #unforgiven
-3,thy,eunchae,kazuha,sakura,sakura,1,1,0,0,0
-3,sean,yunjin,kazuha,chaewon,yunjin,2,2,0,0,0
-3,eldora,chaewon,kazuha,yunjin,chaewon,2,0,1,0,1
-3,zoe,yunjin,kazuha,eunchae,eunchae,1,0,0,1,0
-3,ivy,kazuha,sakura,chaewon,kazuha,0,0,0,0,0
+4,thy,eunchae,kazuha,sakura,sakura,2,1,0,0,1
+4,sean,yunjin,kazuha,chaewon,yunjin,3,3,0,0,0
+4,eldora,chaewon,kazuha,yunjin,chaewon,3,1,1,0,1
+4,zoe,yunjin,kazuha,eunchae,eunchae,1,0,0,1,0
+4,ivy,kazuha,sakura,chaewon,kazuha,1,0,0,0,1
 
 #dbtw
-4,avery,soobin,taehyun,,soobin,0,0,0,0,0
-4,trusha,hueningkai,,,beomgyu,0,0,0,0,0
-4,diana,hueningkai,beomgyu,taehyun,taehyun,1,1,0,0,0
-4,jess,yeonjun,soobin,,yeonjun,1,1,0,0,0
-4,sydney,yeonjun,hueningkai,,hueningkai,2,0,2,0,0
+5,avery,soobin,taehyun,,soobin,0,0,0,0,0
+5,trusha,hueningkai,,,beomgyu,0,0,0,0,0
+5,diana,hueningkai,beomgyu,taehyun,taehyun,2,2,0,0,0
+5,jess,yeonjun,soobin,,yeonjun,2,1,0,0,1
+5,sydney,yeonjun,hueningkai,,hueningkai,2,0,2,0,0
+
+#candy - missing
+
+#super - ignore
 
 #sclass
-5,avery,felix,hyunjin,seungmin,felix,1,1,0,0,0
-5,kelvin,leeknow,seungmin,bangchan,leeknow,1,1,0,0,0
-5,jess,hyunjin,felix,seungmin,hyunjin,2,2,0,0,0
-5,kelly,hyunjin,changbin,han,changbin,1,0,0,0,1
-5,sean,leeknow,seungmin,felix,seungmin,3,3,0,0,0
-5,sydney,han,in,bangchan,in,3,0,3,0,0
-5,zoe,seungmin,bangchan,changbin,bangchan,2,0,0,2,0
-5,eldora,felix,han,seungmin,han,3,1,1,0,1
+6,avery,felix,hyunjin,seungmin,felix,1,1,0,0,0
+6,kelvin,leeknow,seungmin,bangchan,leeknow,1,1,0,0,0
+6,jess,hyunjin,felix,seungmin,hyunjin,3,2,0,0,1
+6,kelly,hyunjin,changbin,han,changbin,1,0,0,0,1
+6,sean,leeknow,seungmin,felix,seungmin,4,4,0,0,0
+6,sydney,han,in,bangchan,in,3,0,3,0,0
+6,zoe,seungmin,bangchan,changbin,bangchan,2,0,0,2,0
+6,eldora,felix,han,seungmin,han,4,2,1,0,1
+
+#donottouch - ignore
+#peekaboo - missing
+#takitaki - ignore
 
 #iam
-6,trusha,liz,rei,yujin,rei,1,0,0,0,1
-6,diana,yujin,liz,wonyoung,yujin,2,1,0,1,0
-6,kelly,,,,leeseo,2,0,1,0,1
-6,eldora,liz,gaeul,yunjin,liz,4,1,2,0,1
-6,eilene,wonyoung,liz,leeseo,wonyoung,1,1,0,0,0
-6,zoe,gaeul,leeseo,liz,gaeul,3,0,1,2,0
+7,trusha,liz,rei,yujin,rei,1,0,0,0,1
+7,diana,yujin,liz,wonyoung,yujin,3,2,0,1,0
+7,kelly,,,,leeseo,2,0,1,0,1
+7,eldora,liz,gaeul,yunjin,liz,5,2,2,0,1
+7,eilene,wonyoung,liz,leeseo,wonyoung,1,1,0,0,0
+7,zoe,gaeul,leeseo,liz,gaeul,3,0,1,2,0
 
 #shhh
-7,jaimee,belle,haneul,,belle,1,1,0,0,0
-7,thy,julie,natty,,julie,2,1,0,1,0
-7,ivy,natty,belle,,natty,1,1,0,0,0
-7,kelly,haneul,julie,,haneul,3,0,1,0,2
+8,jaimee,belle,haneul,,belle,1,1,0,0,0
+8,thy,julie,natty,,julie,3,1,0,1,1
+8,ivy,natty,belle,,natty,2,1,0,0,1
+8,kelly,haneul,julie,,haneul,3,0,1,0,2
 
 #cake
-8,eldora,yeji,ryujin,yuna,lia,5,2,2,0,1
-8,jess,ryujin,yuna,yeji,ryujin,3,3,0,0,0
-8,eilene,yuna,chaeryeong,ryujin,yuna,2,2,0,0,0
-8,avery,ryujin,yeji,yuna,yeji,2,2,0,0,0
-8,diana,chaeryeong,yuna,yeji,chaeryeong,3,2,0,1,0
+9,eldora,yeji,ryujin,yuna,lia,6,3,2,0,1
+9,jess,ryujin,yuna,yeji,ryujin,4,3,0,0,1
+9,eilene,yuna,chaeryeong,ryujin,yuna,2,2,0,0,0
+9,avery,ryujin,yeji,yuna,yeji,2,2,0,0,0
+9,diana,chaeryeong,yuna,yeji,chaeryeong,4,3,0,1,0
 
 #bailaconmigo
-9,jess,leedo,seoho,hwanwoong,seoho,4,4,0,0,0
-9,eldora,hwanwoong,leedo,seoho,hwanwoong,6,2,2,0,2
-9,sydney,hwanwoong,seoho,keonhee,keonhee,4,0,4,0,0
-9,jorryn,seoho,xion,,xion,1,1,0,0,0
-9,kelly,leedo,hwanwoong,seoho,leedo,4,1,1,0,2
+10,jess,leedo,seoho,hwanwoong,seoho,5,4,0,0,1
+10,eldora,hwanwoong,leedo,seoho,hwanwoong,7,3,2,0,2
+10,sydney,hwanwoong,seoho,keonhee,keonhee,4,0,4,0,0
+10,jorryn,seoho,xion,,xion,1,1,0,0,0
+10,kelly,leedo,hwanwoong,seoho,leedo,4,1,1,0,2
+
+#chillkill - missing
 
 #la4
-10,jess,hyunjin,felix,leeknow,hyunjin,5,4,1,0,0
-10,kelly,leeknow,changbin,felix,changbin,5,1,2,0,2
-10,sydney,han,felix,in,han,5,0,4,1,0
-10,eldora,felix,han,leeknow,bangchan,7,3,2,0,2
-10,diana,felix,han,changbin,felix,4,3,0,1,0
-10,sean,leeknow,han,changbin,leeknow,4,3,1,0,0
-10,jaimee,seungmin,han,in,in,2,2,0,0,0
-10,eilene,han,seungmin,leeknow,seungmin,3,3,0,0,0
+11,jess,hyunjin,felix,leeknow,hyunjin,6,4,1,0,1
+11,kelly,leeknow,changbin,felix,changbin,5,2,1,0,2
+11,sydney,han,felix,in,han,5,0,4,1,0
+11,eldora,felix,han,leeknow,bangchan,8,4,2,0,2
+11,diana,felix,han,changbin,felix,5,4,0,1,0
+11,sean,leeknow,han,changbin,leeknow,5,4,1,0,0
+11,jaimee,seungmin,han,in,in,2,2,0,0,0
+11,eilene,han,seungmin,leeknow,seungmin,3,3,0,0,0
 
 #crazyform
-11,trusha,wooyoung,hongjoong,san,hongjoong,2,0,1,0,1
-11,thy,san,hongjoong,yeosang,mingi,3,2,0,1,0
-11,sydney,hongjoong,jongho,seonghwa,jongho,6,1,4,1,0
-11,zoe,yeosang,seonghwa,yunho,yeosang,4,1,1,2,0
-11,eldora,san,wooyoung,seonghwa,san,8,3,2,0,3
-11,jorryn,yunho,seonghwa,mingi,yunho,2,1,1,0,0
-11,miranda,seonghwa,hongjoong,wooyoung,seonghwa,1,1,0,0,0
-11,jaimee,wooyoung,san,seonghwa,wooyoung,3,2,0,1,0
-11,jess,,,,bbt1,6,5,1,0,0
-11,kelly,,,,bbt2,6,1,3,0,2
+12,trusha,wooyoung,hongjoong,san,hongjoong,2,0,1,0,1
+12,thy,san,hongjoong,yeosang,mingi,4,2,0,1,1
+12,sydney,hongjoong,jongho,seonghwa,jongho,6,1,4,1,0
+12,zoe,yeosang,seonghwa,yunho,yeosang,4,1,1,2,0
+12,eldora,san,wooyoung,seonghwa,san,9,4,2,0,3
+12,jorryn,yunho,seonghwa,mingi,yunho,2,1,1,0,0
+12,miranda,seonghwa,hongjoong,wooyoung,seonghwa,1,1,0,0,0
+12,jaimee,wooyoung,san,seonghwa,wooyoung,3,2,0,1,0
+12,jess,,,,bbt1,7,5,1,0,1
+12,kelly,,,,bbt2,6,2,2,0,2
 
 #easy
-12,eilene,seola,bona,,seola,4,3,1,0,0
-12,thy,eunseo,exy,,bona,4,2,0,1,1
-12,eldora,,,,exy,9,4,2,0,3
-12,rhonda,eunseo,bona,,eunseo,0,0,0,0,0
+13,eilene,seola,bona,,seola,4,3,1,0,0
+13,thy,eunseo,exy,,bona,5,2,0,1,2
+13,eldora,,,,exy,10,5,2,0,3
+13,rhonda,eunseo,bona,,eunseo,0,0,0,0,0
 
 #sacrifice
-13,jess,sunghoon,niki,jungwon,sunghoon,7,5,1,0,1
-13,kelly,sunoo,jay,jungwon,jungwon,7,1,3,0,3
-13,jaimee,sunoo,jungwon,sunghoon,sunoo,4,3,0,1,0
-13,sydney,,,,jake,7,1,5,1,0
-13,trusha,jay,jake,jungwon,jay,3,0,2,0,1
-13,diana,heeseung,jungwon,jay,heeseung,5,4,0,1,0
-13,miranda,niki,sunoo,sunghoon,niki,2,2,0,0,0
+14,jess,sunghoon,niki,jungwon,sunghoon,8,5,1,0,2
+14,kelly,sunoo,jay,jungwon,jungwon,7,2,2,0,3
+14,jaimee,sunoo,jungwon,sunghoon,sunoo,4,3,0,1,0
+14,sydney,,,,jake,7,1,5,1,0
+14,trusha,jay,jake,jungwon,jay,3,0,2,0,1
+14,diana,heeseung,jungwon,jay,heeseung,6,5,0,1,0
+14,miranda,niki,sunoo,sunghoon,niki,2,2,0,0,0
+
+#untouchable - ignore
 
 #easy
-14,eldora,chaewon,eunchae,kazuha,chaewon,10,4,2,0,4
-14,sean,yunjin,kazuha,chaewon,yunjin,5,4,1,0,0
-14,jess,chaewon,sakura,yunjin,sakura,8,6,1,0,1
-14,vivian,,,,kazuha,1,0,1,0,0
-14,jaimee,,,,eunchae,5,4,0,1,0
+15,eldora,chaewon,eunchae,kazuha,chaewon,11,5,2,0,4
+15,sean,yunjin,kazuha,chaewon,yunjin,6,5,1,0,0
+15,jess,chaewon,sakura,yunjin,sakura,9,6,1,0,2
+15,vivian,,,,kazuha,1,0,1,0,0
+15,jaimee,,,,eunchae,5,4,0,1,0
 
 #plottwist
-15,sean,dohoon,kyungmin,shinyu,shinyu,6,5,1,0,0
-15,trusha,jihoon,shinyu,hanjin,jihoon,4,1,2,0,1
-15,diana,shinyu,dohoon,youngjae,youngjae,6,5,0,1,0
-15,kelly,dohoon,youngjae,jihoon,dohoon,8,1,3,1,3
-15,thy,kyungmin,jihoon,youngjae,kyungmin,5,2,0,1,2
-15,sydney,dohoon,hanjin,youngjae,hanjin,8,1,5,1,1
+16,sean,dohoon,kyungmin,shinyu,shinyu,7,6,1,0,0
+16,trusha,jihoon,shinyu,hanjin,jihoon,4,1,2,0,1
+16,diana,shinyu,dohoon,youngjae,youngjae,7,6,0,1,0
+16,kelly,dohoon,youngjae,jihoon,dohoon,8,2,2,1,3
+16,thy,kyungmin,jihoon,youngjae,kyungmin,6,2,0,1,3
+16,sydney,dohoon,hanjin,youngjae,hanjin,8,1,5,1,1
+
+#ez - missing
 
 #smart
-16,trusha,yunjin,sakura,eunchae,kazuha,5,2,2,0,1
-16,eldora,chaewon,sakura,kazuha,chaewon,11,5,2,0,4
-16,zoe,yunjin,eunchae,sakura,sakura,5,2,1,2,0
-16,eilene,yunjin,chaewon,sakura,yunjin,5,4,1,0,0
-16,rhonda,yunjin,eunchae,chaewon,eunchae,1,1,0,0,0
+17,trusha,yunjin,sakura,eunchae,kazuha,5,2,2,0,1
+17,eldora,chaewon,sakura,kazuha,chaewon,12,6,2,0,4
+17,zoe,yunjin,eunchae,sakura,sakura,5,2,1,2,0
+17,eilene,yunjin,chaewon,sakura,yunjin,5,4,1,0,0
+17,rhonda,yunjin,eunchae,chaewon,eunchae,1,1,0,0,0
 
 #up
-17,sean,youngeun,hikaru,dayeon,mashiro,7,5,1,1,0
-17,jaimee,youngeun,dayeon,hikaru,youngeun,6,4,0,1,1
-17,kelly,dayeon,youngeun,hikaru,dayeon,9,2,3,1,3
-17,diana,chaehyun,yeseo,youngeun,yeseo,7,5,0,2,0
-17,eldora,hikaru,youngeun,dayeon,hikaru,12,6,2,0,4
-17,thy,youngeun,yeseo,mashiro,xiaoting,6,3,0,1,2
-17,vivian,hikaru,chaehyun,xiaoting,chaehyun,2,0,1,0,1
-17,trusha,,,,yujin,6,2,2,0,2
-17,zoe,xiaoting,hiyyih,chaehyun,hiyyih,6,2,1,3,0
+18,sean,youngeun,hikaru,dayeon,mashiro,8,6,1,1,0
+18,jaimee,youngeun,dayeon,hikaru,youngeun,6,4,0,1,1
+18,kelly,dayeon,youngeun,hikaru,dayeon,9,3,2,1,3
+18,diana,chaehyun,yeseo,youngeun,yeseo,8,6,0,2,0
+18,eldora,hikaru,youngeun,dayeon,hikaru,13,7,2,0,4
+18,thy,youngeun,yeseo,mashiro,xiaoting,7,3,0,1,3
+18,vivian,hikaru,chaehyun,xiaoting,chaehyun,2,0,1,0,1
+18,trusha,,,,yujin,6,2,2,0,2
+18,zoe,xiaoting,hiyyih,chaehyun,hiyyih,6,2,1,3,0
+
+#luna - ignore
 
 #smsy
+19,sean,exy,yeonjung,seola,exy,9,6,1,1,1
+19,jess,,,,dayoung,10,6,2,0,2
+19,jorryn,dawon,,,dawon,3,2,1,0,0
+19,diana,yeoreum,luda,dawon,luda,9,6,1,2,0
+19,jaimee,dayoung,yeonjung,soobin,yeonjung,7,5,0,1,1
+19,eldora,yeoreum,,,yeoreum,14,8,2,0,4
+19,zoe,,,,soobin,7,2,2,3,0
+19,thy,bona,seola,,bona,8,3,0,1,4
+19,eilene,dayoung,soobin,seola,seola,6,5,1,0,0
+19,rhonda,,,,eunseo,2,1,1,0,0
 
 #crazy
+20,diana,yunjin,kazuha,chaewon,yunjin,10,6,2,2,0
+20,sydney,kazuha,eunchae,chaewon,kazuha,9,1,6,1,1
+20,trusha,,,,sakura,8,2,2,0,3
+20,jaimee,,,,eunchae,8,5,1,1,1
+20,eldora,chaewon,,,chaewon,15,9,2,0,4
+
+#perfume - ignore
 
 #touch
+21,eldora,megan,sophia,yoonchae,yoonchae,16,10,2,0,4
+21,melissa,,,,lara,0,0,0,0,0
+21,sydney,manon,yoonchae,lara,manon,10,2,6,1,1
+21,jaimee,daniela,,,daniela,9,5,1,1,2
+21,thy,sophia,yoonchae,lara,sophia,9,4,0,1,4
+21,diana,megan,manon,lara,megan,11,7,2,2,0
 
 #heyhey
+22,jorryn,,,,hanjin,4,3,1,0,0
+22,diana,kyungmin,jihoon,youngjae,kyungmin,12,8,2,2,0
+22,jess,,,,shinyu,11,6,2,0,3
+22,sean,shinyu,dohoon,youngjae,youngjae,10,7,1,1,1
+22,eldora,,,,dohoon,16,10,2,0,4
+22,thy,jihoon,kyungmin,youngjae,jihoon,10,5,0,1,4
 
 #shhh
+23,eldora,,,,backup1,17,10,2,0,5
+23,kelly,,,,backup2,10,4,2,1,3
+23,jorryn,umji,eunha,shinb,umji,5,3,1,0,1
+23,thy,shinb,umji,eunha,shinb,11,6,0,1,4
+23,melissa,,,,eunha,1,0,0,0,1
 
 #criminallove
+24,eldora,jake,sunoo,heeseung,sunoo,18,10,2,0,6
+24,diana,jungwon,jake,niki,jake,13,9,2,2,0
+24,jess,sunghoon,heeseung,niki,sunghoon,12,6,2,0,4
+24,jaimee,niki,jungwon,sunghoon,niki,10,6,1,1,2
+24,kelly,jungwon,niki,sunghoon,jay,11,4,2,1,4
+24,melissa,jungwon,sunghoon,heeseung,jungwon,2,0,0,0,2
+24,sean,heeseung,jungwon,niki,heeseung,11,7,1,2,1
 
 #armageddon
+25,thy,,,,backup1,12,7,0,1,4
+25,miranda,,,,backup2,3,3,0,0,0
+25,sean,,,,backup4,12,8,1,2,1
+25,jaimee,,,,backup5,11,7,1,1,2
+25,zoe,,,,backup6,8,2,2,3,1
+25,trusha,,,,backup7,9,2,2,0,4
+25,eldora,karina,giselle,winter,giselle,19,10,3,0,6
+25,diana,winter,karina,giselle,winter,14,9,3,2,0
+25,rhonda,ningning,,,karina,3,1,1,0,1
+25,eilene,winter,ningning,karina,ningning,7,5,1,1,0
 
 #lastfestival
+26,sean,shinyu,jihoon,dohoon,shinyu,13,8,1,2,2
+26,trusha,jihoon,kyungmin,dohoon,kyungmin,10,2,2,0,5
+26,kelly,jihoon,dohoon,shinyu,jihoon,12,4,2,1,5
+26,karen,dohoon,kyungmin,shinyu,dohoon,0,0,0,0,0
+26,jaimee,youngjae,dohoon,kyungmin,youngjae,12,7,1,1,3
+26,melissa,dohoon,jihoon,shinyu,hanjin,3,1,0,0,2
 
 #igloo
+27,diana,julie,natty,haneul,julie,15,10,3,2,0
+27,eldora,julie,natty,haneul,natty,20,10,4,0,6
+27,jaimee,belle,,,belle,13,8,1,1,3
+27,jess,,,,haneul,13,7,2,0,4
 
 #hot
+28,eldora,chaewon,sakura,kazuha,chaewon,21,10,5,0,6
+28,jaimee,eunchae,,,eunchae,14,9,1,1,3
+28,zoe,yunjin,kazuha,eunchae,yunjin,9,2,2,3,2
+28,jorryn,kazuha,yunjin,sakura,kazuha,6,4,1,0,1
+28,thy,,,,sakura,13,7,0,1,5
 
-#lovesong
+#lovesong - missing
 
-#snap
+#snap - ignore
 
 #whiplash
+29,diana,,,,karina,16,11,3,2,0
+29,jess,karina,winter,ningning,winter,14,7,2,0,5
+29,eldora,giselle,ningning,karina,giselle,22,11,5,0,6
+29,eilene,ningning,,,ningning,8,5,2,1,0
 
-#countdown
+#2months - ignore
+#countdown - missing
 
 #chkchkboom
+30,jess,hyunjin,felix,han,hyunjin,15,7,3,0,5
+30,eldora,felix,seungmin,han,seungmin,23,12,5,0,6
+30,sydney,in,bangchan,changbin,bangchan,11,3,6,1,1
+30,kelly,changbin,han,hyunjin,changbin,13,5,2,1,5
+30,diana,han,bangchan,leeknow,han,17,11,3,2,1
+30,sean,leeknow,hyunjin,han,leeknow,14,9,1,2,2
+30,karen,in,changbin,felix,in,1,1,0,0,0
+30,vivian,felix,hyunjin,han,felix,3,0,2,0,1
 
 #gnarly
+31,vanice,yoonchae,megan,sophia,yoonchae,0,0,0,0,0
+31,eldora,daniela,megan,manon,daniela,24,12,6,0,6
+31,jackie,,,,sophia,0,0,0,0,0
+31,diana,megan,lara,yoonchae,megan,18,12,3,2,1
+31,jess,yoonchae,,,lara,16,8,3,0,5
+31,kelly,,,,manon,14,6,2,1,5
 
-#82pressin
+#82pressin - ignore
 
 #immabe
+32,jaimee,rui,wumuti,,rui,15,10,1,1,3
+32,jess,haru,hyun,,haru,17,8,3,0,6
+32,thy,wumuti,haru,,wumuti,14,7,0,1,6
+32,trusha,,,,hyun,11,2,3,0,5
+
+#lullaby
+33,chloe,youngjae,mark,bambam,mark,0,0,0,0,0
+33,simone,youngjae,jinyoung,jayb,youngjae,0,0,0,0,0
+33,thy,,,,bambam,15,8,0,1,6
+33,kelly,jayb,yugyeom,jinyoung,jackson,15,6,2,1,6
+33,eldora,jinyoung,,,jinyoung,25,13,6,0,6
+33,trusha,yugyeom,jayb,jackson,yugyeom,12,2,3,0,6
+33,jaimee,jayb,jinyoung,youngjae,jayb,16,11,1,1,3
+
+#lovelang - missing
+
+#rose
+34,kelly,naoko,momoka,mahina,mahina,16,6,2,1,7
+34,eldora,chika,naoko,koharu,chika,26,14,6,0,6
+34,jaimee,koharu,naoko,jisoo,naoko,17,12,1,1,3
+34,joseph,jisoo,momoka,yuri,jisoo,0,0,0,0,0
+34,melissa,,,,momoka,4,1,0,0,3
+34,thy,jisoo,koharu,chika,koharu,16,8,0,1,7
+34,jackie,,,,yuri,1,0,0,0,1
+
+#baddesire
+35,eldora,sunoo,,,jungwon,27,15,6,0,6
+35,jaimee,niki,sunghoon,sunoo,sunoo,18,12,2,1,3
+35,jess,sunghoon,jake,heeseung,sunghoon,18,9,3,0,6
+35,melissa,heeseung,sunghoon,jake,heeseung,5,1,0,0,4
+35,kelly,,,,jay,17,6,2,2,7
+35,simone,jake,niki,heeseung,jake,1,1,0,0,0
+35,sydney,heeseung,niki,sunoo,niki,12,3,7,1,1
+
+#tokofest - ignore
+
+#firework
+36,jess,,,,taki,19,10,3,0,6
+36,thy,,,,fuma,17,8,1,1,7
+36,jaimee,yuma,jo,k,yuma,19,12,2,2,3
+36,miranda,maki,k,harua,maki,4,3,0,0,1
+36,zoe,nicholas,k,ej,ej,10,3,2,3,2
+36,kelly,k,fuma,nicholas,k,18,6,2,2,8
+36,trusha,nicholas,harua,k,nicholas,13,3,3,0,6
+36,eilene,harua,,,harua,9,6,2,1,0
+36,sydney,jo,yuma,,jo,13,3,8,1,1
