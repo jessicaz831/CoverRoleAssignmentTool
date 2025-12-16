@@ -1,58 +1,12 @@
 import pandas as pd
-from scipy.optimize import linear_sum_assignment
-import numpy as np
-import csv
 from io import StringIO
+from score import assign_roles
+from ml import train_model, predict_assignments
 
 def load_history(filepath="data/history.csv"):
     with open(filepath, "r", encoding="utf-8") as f:
         lines = [line for line in f if not line.strip().startswith("#")]
     return pd.read_csv(StringIO("".join(lines)))
-
-def build_score_matrix(members, roles, history_df, new_cover_requests):
-    scores = np.zeros((len(members), len(roles)))
-    member_idx = {m: i for i, m in enumerate(members)}
-    role_idx = {r: i for i, r in enumerate(roles)}
-
-    pref_dict = {}
-    for req in new_cover_requests:
-        pref_dict[req['member_name']] = {
-            req.get('top_1_choice') or "": 1,
-            req.get('top_2_choice') or "": 2,
-            req.get('top_3_choice') or "": 3
-        }
-
-    for m in members:
-        m_data = history_df[history_df['member_name'] == m]
-        got_1 = m_data['total_got_1'].max() if not m_data.empty else 0
-        got_2 = m_data['total_got_2'].max() if not m_data.empty else 0
-        got_3 = m_data['total_got_3'].max() if not m_data.empty else 0
-        got_none = m_data['total_got_none'].max() if not m_data.empty else 0
-
-        for r in roles:
-            pref_rank = pref_dict.get(m, {}).get(r, None)
-            if pref_rank is None:
-                score = 0
-            else:
-                base = 4 - pref_rank
-                penalty = got_1 + got_2 * 0.5 + got_3 * 0.25 + got_none * 0.1
-                score = base / (1 + penalty)
-            scores[member_idx[m], role_idx[r]] = -score
-
-    return scores, member_idx, role_idx
-
-# hungarian algorithm
-def assign_roles(members, roles, history_df, new_cover_requests):
-    scores, member_idx, role_idx = build_score_matrix(members, roles, history_df, new_cover_requests)
-    row_ind, col_ind = linear_sum_assignment(scores)
-    assignments = []
-    for r, c in zip(row_ind, col_ind):
-        assignments.append({
-            'member': members[r],
-            'assigned_role': roles[c],
-            'score': -scores[r, c]
-        })
-    return assignments
 
 def get_user_input():
     num_members = int(input("How many members are in this cover? "))
@@ -78,29 +32,103 @@ def main():
     history_df = load_history("data/history.csv")
     new_cover_requests = get_user_input()
 
-    members = [req['member_name'] for req in new_cover_requests]
+    members = [req["member_name"] for req in new_cover_requests]
 
-    raw_roles = input("\nEnter all roles to assign (comma separated), or leave blank to auto-detect: ").strip().lower()
+    raw_roles = input(
+        "\nEnter all roles to assign (comma separated), or leave blank to auto-detect: "
+    ).strip().lower()
+
     if raw_roles:
         roles = [r.strip() for r in raw_roles.split(",") if r.strip()]
     else:
-        # detect roles from lists if left blank
-        roles = list({r for req in new_cover_requests for r in [
-            req.get('top_1_choice'), req.get('top_2_choice'), req.get('top_3_choice')] if r})
+        roles = list({
+            r for req in new_cover_requests
+            for r in (
+                req.get("top_1_choice"),
+                req.get("top_2_choice"),
+                req.get("top_3_choice"),
+            )
+            if r
+        })
 
-    # check if role count matches member count
     if len(roles) != len(members):
-        print(f"\nWarning: Number of roles ({len(roles)}) does not match number of members ({len(members)}).")
+        print(
+            f"\nWarning: Number of roles ({len(roles)}) "
+            f"does not match number of members ({len(members)})."
+        )
         confirm = input("Do you want to continue anyway? (yes/no): ").strip().lower()
         if confirm != "yes":
             print("Aborted.")
             return
 
-    assignments = assign_roles(members, roles, history_df, new_cover_requests)
+    method = input("\nChoose assignment method ('score' or 'ml'): ").strip().lower()
 
-    print(f"\nAssignments:")
+    # using score matrix
+    if method == "score":
+        assignments = assign_roles(
+            members=members,
+            roles=roles,
+            history_df=history_df,
+            new_cover_requests=new_cover_requests,
+        )
+    # using machine learning
+    elif method == "ml":
+        ml_history_df = history_df
+        new_data = []
+
+        for req in new_cover_requests:
+            member = req["member_name"]
+
+            member_hist = ml_history_df[ml_history_df["member_name"] == member]
+
+            past_covers = int(member_hist["total_covers"].max()) if not member_hist.empty else 0
+            past_top_1 = int(member_hist["total_got_1"].max()) if not member_hist.empty else 0
+            past_top_2 = int(member_hist["total_got_2"].max()) if not member_hist.empty else 0
+            past_top_3 = int(member_hist["total_got_3"].max()) if not member_hist.empty else 0
+            past_got_none = int(member_hist["total_got_none"].max()) if not member_hist.empty else 0
+
+            for i, role in enumerate(
+                [req.get("top_1_choice"), req.get("top_2_choice"), req.get("top_3_choice")],
+                start=1
+            ):
+                if role:
+                    new_data.append({
+                        "member": member,
+                        "role": role,
+                        "preference_rank": i,
+                        "total_covers": past_covers,
+                        "total_got_1": past_top_1,
+                        "total_got_2": past_top_2,
+                        "total_got_3": past_top_3,
+                        "total_got_none": past_got_none,
+                    })
+
+        model = train_model(ml_history_df)
+        prediction_df = predict_assignments(model, new_data)
+
+        assignments = []
+        assigned_roles = set()
+
+        for member in members:
+            for _, row in prediction_df.iterrows():
+                if row["member"] == member and row["role"] not in assigned_roles:
+                    assignments.append({
+                        "member": member,
+                        "assigned_role": row["role"],
+                        "score": row["prob"],
+                    })
+                    assigned_roles.add(row["role"])
+                    break
+
+    else:
+        print("Invalid method. Choose 'score' or 'ml'.")
+        return
+
+    # output
+    print("\nAssignments:")
     for a in assignments:
         print(f"{a['member']} → {a['assigned_role']} (score: {a['score']:.2f})")
+
 
 if __name__ == "__main__":
     main()
